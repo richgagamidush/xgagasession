@@ -6,7 +6,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-    default: Gifted_Tech,
+    default: Winsper_Tech,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
@@ -20,13 +20,13 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function GIFTED_MD_PAIR_CODE() {
+        async function WILLIS_MD_PAIR_CODE() {
         const {
             state,
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Gifted_Tech = Gifted_Tech({
+            let Pair_Code_By_Winsper_Tech = Winsper_Tech({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -35,16 +35,16 @@ router.get('/', async (req, res) => {
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
                 browser: ["Chrome (Linux)", "", ""]
              });
-             if(!Pair_Code_By_Gifted_Tech.authState.creds.registered) {
+             if(!Pair_Code_By_Winsper_Tech.authState.creds.registered) {
                 await delay(1500);
                         num = num.replace(/[^0-9]/g,'');
-                            const code = await Pair_Code_By_Gifted_Tech.requestPairingCode(num)
+                            const code = await Pair_Code_By_Winsper_Tech.requestPairingCode(num)
                  if(!res.headersSent){
                  await res.send({code});
                      }
                  }
-            Pair_Code_By_Gifted_Tech.ev.on('creds.update', saveCreds)
-            Pair_Code_By_Gifted_Tech.ev.on("connection.update", async (s) => {
+            Pair_Code_By_Winsper_Tech.ev.on('creds.update', saveCreds)
+            Pair_Code_By_Winsper_Tech.ev.on("connection.update", async (s) => {
                 const {
                     connection,
                     lastDisconnect
@@ -54,45 +54,42 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
+               let session = await Pair_Code_By_Winsper_Tech.sendMessage(Pair_Code_By_Winsper_Tech.user.id, { text: 'XGAGA_2025_' + b64data });
 
-               let GIFTED_MD_TEXT = `
-┏━━━━━━━━━━━━━━
-👻 𝗕𝗘𝗟𝗧𝗔𝗛 𝗫𝗕𝗢𝗧 𝗦𝗘𝗦𝗦𝗜𝗢𝗡𝗦
-🗿𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬
-🙂‍↕️𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗘𝗗
-┗━━━━━━━━━━━━━━━
-> ʏᴏᴜ ʜᴀᴠᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ᴛʜᴇ ғɪʀsᴛ sᴛᴇᴘ ᴛᴏ ᴅᴇᴘʟᴏʏ ʙᴇʟᴛᴀʜ xʙᴏᴛ. ᴄᴏᴘʏ ᴛʜᴇ ᴀʙᴏᴠᴇ ᴍᴇssᴀɢᴇ ᴀɴᴅ ᴅᴇᴘʟᴏʏ ᴛʜᴇ ʙᴏᴛ ᴏɴ ʜᴇʀᴏᴋᴜ.
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-𝗙𝗢𝗟𝗟𝗢𝗪 𝗧𝗛𝗘𝗦𝗘 𝗜𝗠𝗣𝗢𝗥𝗧𝗔𝗡𝗧 𝗟𝗜𝗡𝗞𝗦
+               let WILLIS_MD_TEXT = `𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗜𝗗
+- You have successfully connected to ᴡɪʟʟɪꜱ-ᴍᴅ
 
-ғᴏʟʟᴏᴡ ᴏᴜʀ ᴏғғɪᴄɪᴀʟ ᴡᴀ-ᴄʜᴀɴɴᴇʟ 🌊
- [https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F] 
+- ABOVE is your SESSION ID. Copy it as it will be required during deploy.
+⊶══════════════════⊷
+             *ɴᴀᴍᴇ ⇌* ᴡɪʟʟɪꜱ
+      *ᴄᴏɴᴛᴀᴄᴛ ⇌* +254786273945
+⊶══════════════════⊷
+╭────《  ᴡɪʟʟɪꜱ-ᴍᴅ  》────⊷
+│ ╭──────✧❁✧──────⊰
+│ │ *YouTube⇘*
+│ │https://www.youtube.com/@officialwilis
+│ │ *InstaGram⇘* 
+│ │https://www.instagram.com/Officialwilis
+│ │ *FaceBook⇘*
+│ │https://www.facebook.com/Officialwilis
+│ │ *GitHub⇘*
+https://github.com/officialwilis
 
-ᴊᴏɪɴ ʙᴇʟᴛᴀʜ xʙᴏᴛ ɢʀᴏᴜᴘ ᴄʜᴀᴛ 💦
-[ https://chat.whatsapp.com/KDDCSC0xdIz6hiTxVFLvXg ] 
-
-ᴊᴏɪɴ ᴏᴜʀ ᴜɴʟɪᴍɪᴛᴇᴅ ᴠᴘɴ sᴇʀᴠɪᴄᴇ ɢʀᴏᴜᴘ 🛜
-[ https://chat.whatsapp.com/JIQos2sUdGyII4qsig72pK ] 
-
-ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ ᴏᴡɴᴇʀ ғᴏʀ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ🧑‍💻
- [ https://wa.link/8q7p86 ] 
-
-ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴄᴄᴏᴜɴᴛ, ᴛᴀᴘ ᴛʜɪs ʟɪɴᴋ ᴛᴏ ᴅᴇᴘʟᴏʏ 
- [ https://dashboard.heroku.com/new?button-url&template=https%3A%2F%2Fgithub.com%2FBeltah254%2FXBOT# ] 
- 
-
-> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐓𝐄𝐀𝐌 👻`
-
- await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
+╰══════════════════⊷
+*Group⇘*
+https://chat.whatsapp.com/KX7EPsiJhMlLLHJrXa7n0F
+*Channel⇘*
+https://whatsapp.com/channel/0029VaZ8Q0Y1XquZ673Uvs0m
+⊶══════════════════⊷`
+ await Pair_Code_By_Winsper_Tech.sendMessage(Pair_Code_By_Winsper_Tech.user.id,{text: WILLIS_MD_TEXT},{quoted:session})
  
 
         await delay(100);
-        await Pair_Code_By_Gifted_Tech.ws.close();
+        await Pair_Code_By_Winsper_Tech.ws.close();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    GIFTED_MD_PAIR_CODE();
+                    WILLIS_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -103,6 +100,6 @@ router.get('/', async (req, res) => {
          }
         }
     }
-    return await GIFTED_MD_PAIR_CODE()
+    return await WILLIS_MD_PAIR_CODE()
 });
 module.exports = router
