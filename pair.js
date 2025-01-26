@@ -62,17 +62,17 @@ router.get('/', async (req, res) => {
 
 ❏ ʏᴏᴜ ʜᴀᴠᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ᴛʜᴇ ғɪʀsᴛ sᴛᴇᴘ , ᴄᴏᴘʏ ᴛʜᴇ ᴀʙᴏᴠᴇ sᴇssɪᴏɴ ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ ᴅᴇᴘʟᴏʏᴇʀ ᴏʀ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ❏
 
-❏ғᴏʟʟᴏᴡ ʙᴏᴛ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs🚓  ❏
+❏ғᴏʟʟᴏᴡ ʙᴏᴛ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs  ❏
 [ 🔘https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F🔘]
 ❏ᴀɴʏ ᴅɪғғɪᴄᴜʟᴛɪᴇs ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ❏
 
-> *Whatsapp⇘* 
+> *𝚠𝚑𝚊𝚝𝚜𝚊𝚙𝚙⇘* 
 https://wa.me/254112291443
 
-> *InstaGram⇘* 
+> *𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖⇘* 
 https://www.instagram.com/richgagamidush
 
-> *TeleGram*
+> *𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚖⇘*
 t.me/richardgaga]
 
 > ɢᴇɴᴀʀᴀᴛᴇᴅ ʙʏ ʀɪᴄʜɢᴀɢᴀᴍɪᴅᴜsʜ`
