@@ -54,33 +54,26 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Winsper_Tech.sendMessage(Pair_Code_By_Winsper_Tech.user.id, { text: 'XGAGA_2025_' + b64data });
+               let session = await Pair_Code_By_Winsper_Tech.sendMessage(Pair_Code_By_Winsper_Tech.user.id, { text: 'XGAGA_BOT_' + b64data });
 
-               let WILLIS_MD_TEXT = `𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗜𝗗
-- You have successfully connected to ᴡɪʟʟɪꜱ-ᴍᴅ
+               let WILLIS_MD_TEXT = `❏ ｇａｇａ ｍｄ ｓｅｓｓｉｏｎ ｓｕｃｃｅｓｓｆｕｌｌｙ ｃｏｎｎｅｃｔｅｄ ❏
 
-- ABOVE is your SESSION ID. Copy it as it will be required during deploy.
-⊶══════════════════⊷
-             *ɴᴀᴍᴇ ⇌* ᴡɪʟʟɪꜱ
-      *ᴄᴏɴᴛᴀᴄᴛ ⇌* +254786273945
-⊶══════════════════⊷
-╭────《  ᴡɪʟʟɪꜱ-ᴍᴅ  》────⊷
-│ ╭──────✧❁✧──────⊰
-│ │ *YouTube⇘*
-│ │https://www.youtube.com/@officialwilis
-│ │ *InstaGram⇘* 
-│ │https://www.instagram.com/Officialwilis
-│ │ *FaceBook⇘*
-│ │https://www.facebook.com/Officialwilis
-│ │ *GitHub⇘*
-https://github.com/officialwilis
+❏ ʏᴏᴜ ʜᴀᴠᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ᴛʜᴇ ғɪʀsᴛ sᴛᴇᴘ , ᴄᴏᴘʏ ᴛʜᴇ ᴀʙᴏᴠᴇ sᴇssɪᴏɴ ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ ᴅᴇᴘʟᴏʏᴇʀ ᴏʀ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ❏
 
-╰══════════════════⊷
-*Group⇘*
-https://chat.whatsapp.com/KX7EPsiJhMlLLHJrXa7n0F
-*Channel⇘*
-https://whatsapp.com/channel/0029VaZ8Q0Y1XquZ673Uvs0m
-⊶══════════════════⊷`
+❏ғᴏʟʟᴏᴡ ʙᴏᴛ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs🚓  ❏
+[ 🔘https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F🔘]
+❏ᴀɴʏ ᴅɪғғɪᴄᴜʟᴛɪᴇs ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ❏
+
+> *Whatsapp⇘* 
+https://wa.me/254112291443
+
+> *InstaGram⇘* 
+https://www.instagram.com/richgagamidush
+
+> *TeleGram*
+t.me/richardgaga]
+
+> ɢᴇɴᴀʀᴀᴛᴇᴅ ʙʏ ʀɪᴄʜɢᴀɢᴀᴍɪᴅᴜsʜ`
  await Pair_Code_By_Winsper_Tech.sendMessage(Pair_Code_By_Winsper_Tech.user.id,{text: WILLIS_MD_TEXT},{quoted:session})
  
 
